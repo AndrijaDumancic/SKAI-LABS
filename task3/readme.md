@@ -6,7 +6,7 @@ This Flask API calculates the maximum number of non-overlapping interviews based
 
 ## How It Works
 
-This Flask API calculates the maximum number of non-overlapping interviews based on provided start and end times. When a POST request is made to the /calculate_max_interviews endpoint with JSON data containing lists of start times and end times, the API first validates the input data. It checks if both start_times and end_times lists are provided and ensures that they have the same number of elements. Next, the intervals (start and end times) are sorted based on their end times. Then, the API iterates through the sorted intervals and counts the maximum number of non-overlapping interviews by tracking the end time of the current interview. Finally, the result (the maximum number of non-overlapping interviews), is returned as a JSON response.
+This Flask API calculates the maximum number of non-overlapping interviews based on provided start and end times. When a POST request is made to the `/calculate_max_interviews` endpoint with JSON data containing lists of start times and end times, the API first validates the input data. It checks if both start_times and end_times lists are provided and ensures that they have the same number of elements. Next, the intervals (start and end times) are sorted based on their end times. Then, the API iterates through the sorted intervals and counts the maximum number of non-overlapping interviews by tracking the end time of the current interview. Finally, the result (the maximum number of non-overlapping interviews), is returned as a JSON response.
 
 ## Getting Started
 
